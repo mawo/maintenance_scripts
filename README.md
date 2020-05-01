@@ -33,6 +33,11 @@ sudo whoami # should return "root"
 usermod -g www-data mynewuser
 ```
 
+## add a user to group "backup"
+```bash
+sudo usermod -a -G backup mynewuser
+```
+
 ## Root user für den remote zugriff sperren
 Bevor dieser Schritt durchgeführt wird sollte sichergestellt werden, dass ein funktionierender Account mit SSH-Access besteht. Also vorsichtshalber mit `ssh mynewuser@server` die Zugriffsberechtigung verifizieren.
 
